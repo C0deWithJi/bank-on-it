@@ -11,14 +11,18 @@ const config = {
     ],
     prefix: "",
     theme: {
-        container: {
-            center: true,
-            padding: "2rem",
-            screens: {
-                "2xl": "1400px",
-            },
-        },
         extend: {
+            fontSize: {
+                '16': '16px', // Add custom text size
+            },
+            container: {
+                center: true,
+                padding: "2rem",
+                screens: {
+                    "2xl": "1400px",
+                },
+            },
+
             colors: {
                 fill: {
                     1: "rgba(255, 255, 255, 0.10)",
@@ -108,15 +112,15 @@ const config = {
 
 // filepath: tailwind.config.js
 module.exports = {
-  content: [
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
-    "./app/**/*.{js,ts,jsx,tsx}",
-  ],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
+    content: [
+        "./pages/**/*.{js,ts,jsx,tsx}",
+        "./components/**/*.{js,ts,jsx,tsx}",
+        "./app/**/*.{js,ts,jsx,tsx}",
+    ],
+    theme: {
+        extend: {},
+    },
+    plugins: [],
 };
 
 export default config;
